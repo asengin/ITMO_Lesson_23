@@ -10,14 +10,15 @@ namespace AsyncFactorial
     class Program
     {
         //Метод Counter для дополнительной нагрузки и демонстрации работы асинхронного метода CalculateFactorial
-        
+
         static void Main(string[] args)
         {
             Console.Write("Введите число, для вычисления факториала (от 1 до 20): ");
             int number = Convert.ToInt32(Console.ReadLine());
             CalculateFactorialAsync(number);
-            Counter();            
+            Counter();
             Console.WriteLine("Конец работы метода Main");
+            
             Console.ReadKey();
         }
         static void CalculateFactorial(int number)
